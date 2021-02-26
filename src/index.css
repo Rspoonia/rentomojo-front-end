@@ -60,3 +60,7 @@ code {
 .comment-button {
   background-color: #ececec !important;
 }
+.comment-time {
+  font-size: 12px;
+  color: #ececec;
+}
