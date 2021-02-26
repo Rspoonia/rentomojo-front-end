@@ -2,6 +2,9 @@ import React from 'react'
 import { LogoIcon } from '../images/logo'
 import { Link } from 'react-router-dom'
 
+/**
+ * for show header
+ */
 export default function Header() {
   return (
     <div className="header-menu">

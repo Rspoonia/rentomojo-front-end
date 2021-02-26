@@ -34,3 +34,29 @@ code {
   display: flex;
   flex-wrap: wrap;
 }
+.btn-primary {
+  background-color: #fff !important;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #dc3545 !important;
+}
+.ml-8 {
+  margin-left: 8px !important;
+}
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+.comment-wrapper {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.comment-heading {
+  border-bottom: 4px solid #ececec;
+  width: max-content;
+}
+
+.comment-button {
+  background-color: #ececec !important;
+}
