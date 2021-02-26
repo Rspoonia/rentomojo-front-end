@@ -1,0 +1,19 @@
+.custom-spinner {
+  width: 4rem !important;
+  height: 4rem !important;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+}
+
+.main-content {
+  padding: 2rem;
+  text-align: left;
+}
+.user-detail {
+  text-decoration: none;
+  color: #fff;
+}
+.user-detail td {
+  border: none !important;
+}

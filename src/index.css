@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.relative {
+  position: relative;
+  height: 100vh;
+}
+/**
+  header css
+*/
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  align-items: flex-end;
+  border-bottom: 1px solid #ececec;
+  background-color: aliceblue;
+}
+.post-detail {
+  text-align: left;
+  padding: 2rem 4rem;
+}
+.post-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
