@@ -64,3 +64,13 @@ code {
   font-size: 12px;
   color: #ececec;
 }
+.comment-button {
+  color: #0b65c2 !important;
+  background-color: #fff !important;
+}
+.comment-button:hover,
+.comment-button:focus,
+.comment-button:active {
+  color: #fff !important;
+  background-color: #000 i !important;
+}

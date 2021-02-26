@@ -160,10 +160,7 @@ export default function PostDetail(props) {
           </div>
           <div className="comment-wrapper">
             <h3 className="comment-heading">Comments</h3>
-            <Button
-              className="text-white bg-dark"
-              onClick={() => toggleComments()}
-            >
+            <Button className="comment-button" onClick={() => toggleComments()}>
               {showComments ? 'Hide Comments' : 'Show Comments'}
             </Button>
           </div>
