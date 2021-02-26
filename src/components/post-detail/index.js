@@ -8,6 +8,8 @@ import {
 } from '../../constant'
 import { TrashIcon } from '../images/trashIcon'
 import Button from 'react-bootstrap/Button'
+import Table from 'react-bootstrap/Table'
+
 /**
  * for show post detail with comments
  */
@@ -86,9 +88,24 @@ export default function PostDetail(props) {
             (!commentData.length ? (
               <Loader />
             ) : (
-              commentData.map((comment) => (
-                <CommentUI comment={comment} key={comment.id} />
-              ))
+              <>
+                <Table striped bordered hover variant="dark">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Title</th>
+                      <th>Comments</th>
+                    </tr>
+                  </thead>
+                  {commentData.map((comment, index) => (
+                    <CommentUI
+                      comment={comment}
+                      key={comment.id}
+                      currIndex={index}
+                    />
+                  ))}
+                </Table>
+              </>
             ))}
         </div>
       )}
@@ -100,6 +117,14 @@ export default function PostDetail(props) {
  * for show comments
  */
 
-const CommentUI = ({ comment }) => {
-  return <div></div>
+const CommentUI = ({ comment, currIndex }) => {
+  return (
+    <tbody>
+      <tr>
+        <td>{currIndex}</td>
+        <td>{comment.name}</td>
+        <td>{comment.body}</td>
+      </tr>
+    </tbody>
+  )
 }
